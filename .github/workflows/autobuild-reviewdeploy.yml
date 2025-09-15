@@ -13,10 +13,11 @@ jobs:
       - run: echo "building......."
 
   deploy:
-    needs:build
+    runs-on: ubuntu-latest
+    needs: build
     environment:
       name: Prod
     steps:
-      -name: mydepstep
-       run: echo "dep done "
+      - name: mydepstep
+        run: echo "dep done "
        
