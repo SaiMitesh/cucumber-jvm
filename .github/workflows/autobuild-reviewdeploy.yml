@@ -1,4 +1,4 @@
-name: CI/CD with Manual Approval
+name: CI/CD with Manual deploy Approval
 
 on:
   push:
