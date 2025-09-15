@@ -1,0 +1,22 @@
+name: CI/CD with Manual Approval
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "building......."
+
+  deploy:
+    needs:build
+    environment:
+      name: Prod
+    steps:
+      -name: mydepstep
+       run: echo "dep done "
+       
