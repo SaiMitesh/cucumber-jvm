@@ -13,8 +13,8 @@ on:
         default: '1.0.0'
 
 jobs:
-  deploy:
-    name: Deploy Job
+  myjob1:
+    name: test dep job
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
